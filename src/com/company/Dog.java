@@ -12,12 +12,16 @@ public class Dog extends Pet {
     public Dog() {
         System.out.println("What is your dogs name?");
         setPetName(input.nextLine());
+
         System.out.println("Does " + getPetName() + " like to take walks? true or false.");
         setLikesWalks(input.nextBoolean());
+
         System.out.println("Can " + getPetName() + " fetch?");
         setCanFetch(input.nextBoolean());
+
         System.out.println("What coat type does " + getPetName() + " have?");
         setCoatType(input.nextLine());
+
         System.out.println("How old is " + getPetName() + "?");
         setAge(input.nextInt());
         int newAge = getAge() * 7;

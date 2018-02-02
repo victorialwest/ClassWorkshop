@@ -35,7 +35,7 @@ public class Cat extends Pet {
         setUsesLitterbox(getInput().nextBoolean());
         System.out.println("Does " + getPetName() + " like catnip");
         setLikesCatnip(getInput().nextBoolean());
-        
+
 
 
     }
