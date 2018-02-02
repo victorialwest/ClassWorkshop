@@ -1,11 +1,14 @@
 package com.company;
 
+import java.util.Scanner;
+
 public class Pet {
 
     private String ownerName;
     private String petName;
     private String homeAddress;
     private int age;
+    private Scanner input = new Scanner(System.in);
 
     public Pet(String ownerName, String petName, String homeAddress, int age, char gender) {
         this.ownerName = ownerName;
@@ -13,6 +16,10 @@ public class Pet {
         this.homeAddress = homeAddress;
         this.age = age;
         this.gender = gender;
+    }
+
+    public Pet() {
+
     }
 
     public String getOwnerName() {
@@ -56,4 +63,16 @@ public class Pet {
     }
 
     private char gender;
+
+    public Scanner getInput() {
+        return input;
+    }
+
+    protected String makeSound() {
+
+        return "Pets make no sound, ";
+    }
+
+
+
 }
