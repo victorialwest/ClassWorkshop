@@ -23,8 +23,21 @@ public class Cat extends Pet {
     public Cat() {
         System.out.println("What is your cat's name?");
         setPetName(getInput().nextLine());
-        System.out.println("Does " + getPetName() + " like treats? True or false.");
+        System.out.println("Does " + getPetName() + " like treats? true or false.");
         setLikesTreats(getInput().nextBoolean());
+        System.out.println("Does" + getPetName() + " have long hair? true or false.");
+        setHasLonghair(getInput().nextBoolean());
+        System.out.println("What is " + getPetName() + "'s hair color?");
+        setHaircolor(getInput().nextLine());
+        System.out.println("What is " + getPetName() + "'s eye color?");
+        setEyeColor(getInput().nextLine());
+        System.out.println("Does " + getPetName() + " use the litterbox?" );
+        setUsesLitterbox(getInput().nextBoolean());
+        System.out.println("Does " + getPetName() + " like catnip");
+        setLikesCatnip(getInput().nextBoolean());
+        
+
+
     }
 
     public Cat(String ownerName, String petName, String homeAddress, int age, char gender,

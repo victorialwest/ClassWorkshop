@@ -16,6 +16,8 @@ public class Dog extends Pet {
         setLikesWalks(input.nextBoolean());
         System.out.println("Can " + getPetName() + " fetch?");
         setCanFetch(input.nextBoolean());
+        System.out.println("What coat type does " + getPetName() + " have?");
+        setCoatType(input.nextLine());
         System.out.println("How old is " + getPetName() + "?");
         setAge(input.nextInt());
         int newAge = getAge() * 7;
