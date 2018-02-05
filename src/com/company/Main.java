@@ -16,7 +16,7 @@ public class Main {
         System.out.println(cat.makeSound());
 
 
-
+        System.out.println(cat.catYears());
     }
 
 }

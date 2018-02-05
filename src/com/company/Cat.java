@@ -35,6 +35,8 @@ public class Cat extends Pet {
         setUsesLitterbox(getInput().nextBoolean());
         System.out.println("Does " + getPetName() + " like catnip");
         setLikesCatnip(getInput().nextBoolean());
+        System.out.println("How old is " + getPetName() + "?" );
+        setAge(getInput().nextInt());
 
 
 
@@ -107,4 +109,24 @@ public class Cat extends Pet {
 
     }
 
+    protected String catYears() {
+        int catYears;
+
+        switch(super.getAge()) {
+            case 0:
+                catYears = 0;
+                break;
+            case 1:
+                catYears = 19;
+                break;
+            case 2:
+                catYears = 24;
+                break;
+            default:
+                catYears = (super.getAge() - 2) * 4 + 24;
+                break;
+        }
+
+        return super.getPetName() + " is " + super.getAge() + " in human years and " + catYears + " in cat years.";
+    }
 }
